@@ -12,12 +12,12 @@
 body {
   font-family: 'Roboto', sans-serif;
   background-image: url("img/bgPic.jpg");
-  min-height: 92vh;
   overflow: auto;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
+  height: 100vh;
 }
 
 .header h4 {
@@ -111,13 +111,37 @@ body {
   font-size: xx-large;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
+.bg-back{
+  background-color:  rgba(0, 0, 0, 0.4) !important;
+}
+::-webkit-scrollbar{
+  width: 4px;
+  border: 1px solid #d5d5d5;
+}
+::-webkit-scrollbar-track{
+  border-radius: 0;
+  background: #eeeeee;
+}
+::-webkit-scrollbar-thumb{
+  border-radius: 0;
+  background: #01082c;
+}
+
 @media screen and (max-width: 800px) {
   .app-main {
     width: 96%;
     padding: 10px;
     transition: 0.7s;
   }
-  body {
-    min-height: 94vh;
-  }
 }
+@media (min-width: 820px) and (max-width: 1180px) {
+  .app-main{
+   width: 700px;
+  }
+ }
+ @media (min-width: 1200px) and (max-width: 1380px) {
+  .app-main{
+   width: 700px;
+  }
+ }
